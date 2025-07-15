@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Project</title>
+    <style>
+      /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body{
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+      .container {
+        height: 748px;
+        width: 748px;
+        display: grid;
+        background-color: #000;
+        gap: 10px;
+        grid-template-columns: 320px 198px 153px 50px;
+        grid-template-rows: 414px 130px 150px 20px;
+      }
+      .item {
+        background-color: #f0f1ec;
+      }
+      .first {
+        background-color: #e72f24;
+      }
+      .second {
+        grid-area: 1 / 2 / 2 / 5;
+      }
+      .third {
+        grid-area: 2 / 1 / 4 /2;
+      }
+      .fourth {
+        grid-area: 2 / 2 / 4 / 4;
+      }
+      .fifth {
+        background-color: #004592;
+      }
+
+      .eighth {
+        background-color: #f9d01e;
+      }
+      .ninth {
+        background-color: #232629;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Write your HTML here -->
+    <h1>This is Mondrian project developed with the help of grid technique</h1>
+    <div class="container">
+      <div class="first item"></div>
+      <div class="second item"></div>
+      <div class="third item"></div>
+      <div class="fourth item"></div>
+      <div class="fifth item"></div>
+      <div class="sixth item"></div>
+      <div class="seventh item"></div>
+      <div class="eighth item"></div>
+      <div class="ninth item"></div>
+    </div>
+  </body>
+</html>

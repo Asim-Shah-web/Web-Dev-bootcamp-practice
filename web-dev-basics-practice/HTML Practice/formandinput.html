@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form And Input Tags</title>
+  </head>
+  <body>
+    <form action="backend.php">
+      <div>
+        <label for="name">Name</label>
+        <br />
+        <input type="text" name="MyName" id="name" />
+      </div>
+      <br />
+      <div>Role: <input type="text" name="MyRole" /></div>
+      <br />
+
+      <div>Email:<input type="email" name="MyEmail" /></div>
+      <br />
+      <div>Date: <input type="date" name="MyDate" /></div>
+      <br />
+      <div>Bonus: <input type="number" name="MyBonus" /></div>
+      <br />
+      <div>Are you Eligible: <input type="checkbox" checked/></div> <!--by default checked value-->
+      <br />
+      <div>
+        Gender: Male: <input type="radio" name="MyGender" /> Female:
+        <input type="radio" name="MyGender" /> other:
+        <input type="radio" name="MyGender" />
+      </div>
+      <br />
+      <div>
+        Write About Yourself: <br />
+        <textarea name="MyText" cols="30" rows="30"></textarea>
+      </div>
+      <br />
+      <div>
+        <label for="car">CAR:</label>
+        <select name="MyCar" id="car">
+          <option value="indica">INDICA</option>
+          <option value="swift">SWIFT</option>
+        </select>
+        <br />
+        <div>
+            Add a file: <br>
+            <input type="file" name="MyFile" />
+        </div>
+      </div>
+      <br />
+      <div>
+        <label for="paper">EXAMS:</label>
+        <select name="MyExams" id="paper">
+          <option value="1styear">First Year</option selected>  <!--by default selected option-->
+          <option value="2ndyear">Second Year</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <input type="submit" value="submit now"/>
+        <input type="reset" value="Reset Now"/> 
+      </div>
+      <br />
+    </form>
+  </body>
+</html>
