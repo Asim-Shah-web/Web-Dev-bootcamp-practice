@@ -1,0 +1,18 @@
+<%- include("partials/header.ejs") %>
+<h1 id="headcomp">Compose</h1>
+<form action="/compose" method="post">
+    <label for="titlecomp" class="label">Blog's Title</label>
+    <input type="text"  id="titlecomp" placeholder="Blog's Title" name="mytitle">
+    <label for="blogcontent" class="label">Blog's Content</label>
+    <textarea  id="blogcontent" placeholder="Blog's Content" rows="5" cols="30" name="myblog" ></textarea>
+    <input type="datetime" name="postTime" id="datetime" value="<%= new Date().toLocaleString()%>">
+    <button type="submit" name="mypublish-btn" id="btn">Publish</button>
+</form>
+
+<%- include("partials/footer.ejs") %>
+
+
+
+
+
+
